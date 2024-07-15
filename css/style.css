@@ -106,8 +106,8 @@ header {
 }
 
 header img {
-    width: 61px;
-    height: 19px;
+    height: 1.1875rem;
+    aspect-ratio: 61/19;
 }
 
 nav {
