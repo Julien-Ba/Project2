@@ -270,21 +270,21 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 30px;
+    gap: 2em;
     width: 65%;
 }
 
 .hebergements-cards {
-    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
 }
 
 .hebergements-cards .card {
+    width: 100%;
+    aspect-ratio: 250/207;
     display: flex;
     flex-direction: column;
-    height: 14em;
 }
 
 .hebergements-cards img {
@@ -295,13 +295,9 @@ nav {
 
 .hebergements-cards .card-content {
     width: 67%;
-    padding-left: 15px;
+    padding-left: 1em;
     display: flex;
     flex-direction: column;
-}
-
-.hebergements .card-title {
-    text-wrap: nowrap;
 }
 
 .hebergements .card-subtitle {
@@ -337,11 +333,10 @@ nav {
 
 .populaires-cards .card-content {
     width: 67%;
-    padding-left: 15px;
+    padding-left: 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .populaires-cards .card-title {
@@ -361,26 +356,27 @@ nav {
 
 /****** activites ***********/
 .activites {
-    margin-top: 35px;
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 2em;
 }
 
 .activites-title {
-    padding-left: 30px;
+    padding-left: 2em;
 }
 
 .activites-cards {
-    display: flex;
-    justify-content: space-evenly;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
 }
 
 .activites-cards .card {
-    height: 90%;
+    height: 100%;
     width: 18vw;
     aspect-ratio: 210/439;
-    padding: 0 0 1em 0;
+    padding: 0 0 0.5em 0;
 }
 
 .activites-cards img {
@@ -430,6 +426,14 @@ footer section {
 
     .hebergements {
         width: 100%;
+    }
+
+    .hebergements .card-title {
+        margin: 0.5em 0 0.5em;
+    }
+
+    .hebergements .card-subtitle {
+        margin: 0.5em 0 0.5em;
     }
 
     .activites-cards .card {
@@ -492,6 +496,10 @@ footer section {
         align-items: center;
     }
 
+    .search {
+        padding-left: 2em;
+    }
+
     .search-filter {
         flex-direction: column;
         align-items: start;
@@ -530,11 +538,7 @@ footer section {
     }
     
     .hebergements-cards {
-        width: 100vw;
-        display: flex;
-       flex-direction: column;
-       align-items: center;
-        gap: 30px;
+        grid-template-columns: 1fr;
     }
 
     .hebergements-cards .card {
@@ -543,8 +547,8 @@ footer section {
     }
 
     .activites-cards {
-        flex-direction: column;
-        gap: 2em;
+        grid-template-columns: 1fr;
+        gap: 3em;
     }
     
     .activites-cards .card {
@@ -553,11 +557,8 @@ footer section {
         aspect-ratio: 315/200;
     }
 
-    .activites-cards img {
-        /* height: 80%; */
-    }
-
     footer {
+        margin-top: 4em;
         background-color: var(--section-bg-color);
     }
 
