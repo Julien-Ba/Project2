@@ -56,7 +56,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0 3rem;
     box-sizing: border-box;
 }
 
@@ -112,11 +112,11 @@ header {
 
 nav {
     display: flex;
-    gap: 4em;
+    gap: 4rem;
 }
 
 .nav-link {
-    padding: 1em;
+    padding: 1rem;
     border-top: 2px solid rgba(0, 0, 0, 0);
 }
 
@@ -131,19 +131,19 @@ nav {
 .search {
     display: flex;
     flex-direction: column;
-    gap: 2.2em;
-    margin: 2em 0 2.2em;
+    gap: 2.2rem;
+    margin: 2em 0 2.2rem;
 }
 
 .search-headline p {
-    margin-top: 0.25em;
+    margin-top: 0.5rem;
 }
 
 /****** Search-bar ***********/
 .search-container {
     display: flex;
-    width: 23.5em;
-    height: 3em;
+    width: 23.5rem;
+    height: 3rem;
 }
 
 .search-container-icon-box {
@@ -152,7 +152,7 @@ nav {
     align-items: center;
     background-color: var(--section-bg-color);
     border-radius: 15px 0 0 15px;
-    width: 3em;
+    width: 3rem;
 }
 
 .search-container-icon {
@@ -162,7 +162,7 @@ nav {
 
 .search-container form {
     display: flex;
-    width: 20.5em; /* ????? */
+    width: 20.5rem;
 }
 
 .search-input {
@@ -179,7 +179,7 @@ nav {
     color: inherit;
     font-weight: var(--font-bold);
     font-size: var(--font-medium);
-    opacity: 1;
+    opacity: 1; /* to match firefox with chrome */
 }
 
 .search-input:focus {
@@ -189,7 +189,7 @@ nav {
 
 .search-mobile {
     display: none;
-    margin-left: -1em;
+    margin-left: -1rem;
     filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.3));
 }
 
@@ -203,7 +203,7 @@ nav {
     font-weight: var(--font-bold);
     font-size: var(--font-medium);
     text-align: center;
-    padding: 0 1em 0 1em;
+    padding: 0 1rem 0 1rem;
     cursor: pointer;
 }
 
@@ -218,8 +218,8 @@ nav {
     display: flex;
     align-items: center;
     gap: 0.625em;
-    height: 3.1em;
-    padding: 0 1.2em 0 1.2em;
+    height: 2.6rem;
+    padding: 0 1rem 0 1rem;
     background-color: var(--card-bg-color);
     border-radius: 20px;
     border-color: var(--border-color);
@@ -243,7 +243,7 @@ nav {
 .infobar {
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .circle-icon {
@@ -267,7 +267,7 @@ nav {
 .hebergements-and-populaires section {
     background-color: var(--section-bg-color);
     border-radius: 20px;
-    padding: 30px;
+    padding: 2rem;
     box-sizing: border-box;
 }
 
@@ -276,14 +276,14 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 2em;
+    gap: 2rem;
     width: 65%;
 }
 
 .hebergements-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2em;
+    gap: 2rem;
 }
 
 .hebergements-cards .card {
@@ -299,19 +299,22 @@ nav {
 }
 
 .hebergements-cards .card-content {
-    margin: 0 1em 0 1em;
+    margin-left:1rem;
+    margin-right: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .hebergements .card-title {
-    margin: 0.5em 0 0.5em; 
+    margin-top: 0.5rem;
+    margin-bottom: 0;
 }
 
 .hebergements .card-subtitle {
     font-size: var(--font-extra-small);
-    margin: 0.5em 0 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 /****** Populaires ***********/
@@ -326,12 +329,12 @@ nav {
 }
 
 .populaires-cards {
-    min-width: 14em;
+    min-width: 14rem;
 }
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 2rem;
 }
 
 
@@ -343,15 +346,15 @@ nav {
 
 .populaires-cards .card-content {
     width: 67%;
-    padding-left: 1em;
+    padding-left: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin-top: 0.66rem;
+    margin-bottom: 0.33em;
 }
 
 .populaires-cards .card-subtitle {
@@ -359,7 +362,7 @@ nav {
 }
 
 .populaires-cards .card-rating {
-    margin-bottom: 5px;
+    margin-bottom: 0.33rem;
 }
 
 
@@ -373,7 +376,7 @@ nav {
 }
 
 .activites-title {
-    padding-left: 2em;
+    padding-left: 2rem;
 }
 
 .activites-cards {
@@ -397,14 +400,14 @@ nav {
 }
 
 .activites-cards .card-title {
-    padding-left: 15px;
+    padding-left: 1rem;
 }
 
 
 
 /****** footer ***********/
 footer {
-    margin-top: 35px;
+    margin-top: 5rem;
     display: flex;
 }
 
@@ -413,13 +416,13 @@ footer section {
     flex-direction: column;
     width: 33%;
     background-color: var(--section-bg-color);
-    padding: 0 0 15px 15px;
+    padding: 0 0 1rem 1rem;
 }
 
 .about-links {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0.5em;
 }
 
 
@@ -444,17 +447,13 @@ footer section {
         padding-bottom: 2em;
         aspect-ratio: 21/27;
     }
-
-    footer {
-        margin-top: 5rem;
-    }
 }
 
 @media (max-width: 1024px) and (min-width: 767.99) {
     .populaires-cards a {
         width: 30%;
     }
-    
+
     .populaires-cards {
         display: flex;
         flex-direction: row;
@@ -470,8 +469,8 @@ footer section {
 
     header {
         flex-direction: column;
-        padding: 1em;
-        gap: 2em;
+        padding: 1rem;
+        gap: 1.5em;
     }
 
     nav {
@@ -480,7 +479,7 @@ footer section {
     }
 
     .nav-link {
-        padding: 0 0 1em 0;
+        padding: 0 0 1rem 0;
         border-top-style: none;
         border-bottom-style: solid;
         border-color: var(--section-bg-color);
@@ -579,11 +578,18 @@ footer section {
     }
 
     footer {
-        margin-top: 4em;
+        margin-top: 4rem;
         background-color: var(--section-bg-color);
     }
 
     footer section {
         padding-left: 0;
+    }
+}
+
+/* base width of the search bar*/
+@media (max-width: 23.5rem) {
+    .search-container {
+        max-width: 95vw;
     }
 }
