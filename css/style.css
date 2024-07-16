@@ -317,6 +317,10 @@ nav {
     margin-bottom: 0.5em;
 }
 
+.extend-title {
+    margin: 0;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -389,7 +393,7 @@ nav {
     height: 100%;
     width: 18vw;
     max-width: 312px; /* calc() not working ? -> (max screen size / nb of card) - gap */
-    aspect-ratio: 210/439;
+    aspect-ratio: 297.5/439;
     padding: 0 0 0.5em 0;
 }
 
@@ -399,8 +403,16 @@ nav {
     border-radius: 20px 20px 0 0;
 }
 
+.activites-cards .card-content {
+    display: table;
+    height: 13%;
+}
+
 .activites-cards .card-title {
     padding-left: 1rem;
+    padding-right: 1rem;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 
@@ -444,8 +456,15 @@ footer section {
     }
 
     .activites-cards .card {
-        padding-bottom: 2em;
-        aspect-ratio: 21/27;
+        aspect-ratio: 193.5/270;
+    }
+
+    .activites-cards img {
+        height: 74%;
+    }
+
+    .activites-cards .card-content {
+        height: 26%;
     }
 }
 
@@ -533,7 +552,7 @@ footer section {
         grid-template-columns: repeat(2, minmax(6em, 15em));
     }
 
-    .hebergements-and-populaires, .hebergements, .populaires {
+    .hebergements-and-populaires {
         width: 100%;
     }
 
@@ -568,13 +587,20 @@ footer section {
 
     .activites-cards {
         grid-template-columns: 1fr;
-        gap: 3em;
+        gap: 3rem;
     }
     
     .activites-cards .card {
         width: 80vw;
-        padding-bottom: 1em;
         aspect-ratio: 315/200;
+    }
+
+    .activites-cards img {
+        height: 71%;
+    }
+
+    .activites-cards .card-content {
+        height: 29%;
     }
 
     footer {
