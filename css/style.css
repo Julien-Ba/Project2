@@ -180,7 +180,7 @@ nav {
     color: inherit;
     font-weight: var(--font-bold);
     font-size: var(--font-medium);
-    opacity: 1; /* to match firefox with chrome */
+    opacity: 1; /* to match chrome with firefox */
 }
 
 .search-input:focus {
@@ -596,6 +596,7 @@ footer section {
     
     .activites-cards .card {
         width: 80vw;
+        max-width: 80vw;
         aspect-ratio: 315/200;
     }
 
