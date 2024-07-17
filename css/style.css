@@ -522,6 +522,7 @@ footer section {
 
     .search-container {
         width: 100%;
+        justify-content: center;
     }
 
     .search-desktop {
@@ -549,6 +550,7 @@ footer section {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, minmax(6em, 15em));
+        justify-content: center;
     }
 
     .hebergements-and-populaires {
@@ -566,9 +568,11 @@ footer section {
     .populaires-cards {
         display: grid;
         grid-template-columns: 1fr;
+        justify-items: center;
     }
 
     .populaires-cards .card {
+        max-width: 80vw;
         aspect-ratio: 335/146;
     }
 
@@ -582,6 +586,7 @@ footer section {
     
     .hebergements-cards {
         grid-template-columns: 1fr;
+        justify-items: center;
     }
 
     .hebergements-cards .card {
@@ -595,7 +600,7 @@ footer section {
     }
     
     .activites-cards .card {
-        width: 80vw;
+        width: 100%;
         max-width: 80vw;
         aspect-ratio: 315/200;
     }
