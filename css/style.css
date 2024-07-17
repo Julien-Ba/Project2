@@ -20,22 +20,23 @@
     --font-small: 1em;
     --font-extra-small: 0.875em;
 
-    --font-semi-bold: 600;
+    --font-semi-bold: 600; /* was bold on the base code, changed to semi-bold to match the model */
     --font-bold: 700;
 }
 
-@media (max-width: 1024pxpx) {
+@media (max-width: 1024px) {
     :root {
-        --font-small: 0.875em;
-        --font-extra-small:0.8125em;
+        --font-medium-small: 1em;
+        --font-small: 0.875em;          /*     was like that on the base code      */
+        --font-extra-small:0.8125em;    /*     but not on the model ?              */
     }
 }
 
 @media (max-width: 767.98px) {
     :root {
-        --font-big: 1.3125em;
-        --font-medium: 1.0625em;
-        --font-medium-small: 1em;
+        --font-big: 1.3125em;           /*      set to match above, there is        */
+        --font-medium: 1.0625em;        /*      no font size changes on the model   */
+        --font-medium-small: 0.875em;   /*      except for the medium-small         */
     }
 }
 
