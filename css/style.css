@@ -20,7 +20,7 @@
     --font-small: 1em;
     --font-extra-small: 0.875em;
 
-    --font-semi-bold: 600; /* was bold on the base code, changed to semi-bold to match the model */
+    --font-semi-bold: 600;
     --font-bold: 700;
 }
 
@@ -92,7 +92,8 @@ a {
 }
 
 .euro {
-    font-weight: var(--font-semi-bold);
+    font-weight: var(--font-semi-bold); 
+    /* was bold on the base code, changed to semi-bold to match the model */
 }
 
 .neutral-star {
@@ -320,6 +321,8 @@ nav {
 
 .extend-title {
     margin: 0;
+    font-size: var(--font-medium);
+    font-weight: var(--font-bold);
 }
 
 /****** Populaires ***********/
@@ -433,8 +436,11 @@ footer section {
 }
 
 .about-links {
+    list-style: none;
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
     gap: 0.5em;
 }
 
