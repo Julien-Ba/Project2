@@ -545,6 +545,7 @@ footer section {
 
     .hebergements-and-populaires {
         width: 100%;
+        gap: 1rem;
     }
 
     .hebergements-and-populaires section {
@@ -586,6 +587,10 @@ footer section {
         aspect-ratio: 335/207;
     }
 
+    .activites {
+        margin-top: 1rem;
+    }
+
     .activites-cards {
         grid-template-columns: 1fr;
     }
@@ -605,7 +610,7 @@ footer section {
     }
 
     footer {
-        margin-top: 4rem;
+        margin-top: 2rem;
         padding-top: 1rem;
         padding-left: 10vw;
         background-color: var(--section-bg-color);
@@ -615,7 +620,7 @@ footer section {
     }
 
     footer section {
-        padding: 0;
+        padding-left: 0;
         width: 100%;
     }
 }
