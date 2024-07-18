@@ -389,15 +389,14 @@ nav {
 
 .activites-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
 .activites-cards .card {
     height: 100%;
-    width: 18vw;
-    max-width: 312px; /* calc() not working ? -> (max screen size / nb of card) - gap */
     aspect-ratio: 297.5/439;
+    box-sizing: border-box;
     padding: 0 0 0.5rem 0;
 }
 
