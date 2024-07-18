@@ -134,7 +134,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 2.2rem;
-    margin: 2em 0 2.2rem;
+    margin: 2rem 0 2.2rem;
 }
 
 .search-headline p {
@@ -219,7 +219,7 @@ nav {
 .filter-button {
     display: flex;
     align-items: center;
-    gap: 0.625em;
+    gap: 0.625rem;
     height: 2.6rem;
     padding: 0 1rem 0 1rem;
     background-color: var(--card-bg-color);
@@ -252,8 +252,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.5rem;
+    height: 1.5rem;
     border: 1px solid var(--border-color);
     border-radius: 50%;
 }
@@ -362,7 +362,7 @@ nav {
 
 .populaires-cards .card-title {
     margin-top: 0.66rem;
-    margin-bottom: 0.33em;
+    margin-bottom: 0.33rem;
 }
 
 .populaires-cards .card-subtitle {
@@ -398,7 +398,7 @@ nav {
     width: 18vw;
     max-width: 312px; /* calc() not working ? -> (max screen size / nb of card) - gap */
     aspect-ratio: 297.5/439;
-    padding: 0 0 0.5em 0;
+    padding: 0 0 0.5rem 0;
 }
 
 .activites-cards img {
@@ -441,7 +441,7 @@ footer section {
     flex-direction: column;
     padding: 0;
     margin: 0;
-    gap: 0.5em;
+    gap: 0.5rem;
 }
 
 
