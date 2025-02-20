@@ -1,5 +1,7 @@
 # Booki
 
+🔗 [Live Demo](https://julien-ba.github.io/Project2/)
+
 ## Description
 
 This project was developed as part of the OpenClassrooms Web Developer program, focusing on HTML and CSS integration.
